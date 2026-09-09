@@ -1,83 +1,87 @@
-# QuickBill – Free Invoice Generator
+# QuickBill
 
-A beautiful, modern **invoice generator** designed as a profitable micro-SaaS starter.
+**Professional invoices, made simple.**
 
-**Live demo idea**: Host on GitHub Pages for free → https://saturn-world.github.io/quickbill
+A beautiful, free invoice generator designed as a profitable micro-SaaS starter.
 
-![QuickBill](https://img.shields.io/badge/status-ready-brightgreen) ![License](https://img.shields.io/badge/license-MIT-blue)
+[![Live Demo](https://img.shields.io/badge/demo-GitHub%20Pages-indigo)](https://saturn-world.github.io/quickbill)
+[![License](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
 
-## Why this can make money
+---
 
-| Feature              | Free Plan          | Pro ($9/mo)              | Agency ($29/mo)     |
-|----------------------|--------------------|--------------------------|---------------------|
-| Unlimited invoices   | ✅                 | ✅                       | ✅                  |
-| PDF download         | ✅                 | ✅                       | ✅                  |
-| Watermark            | Yes (small)        | Removed                  | Removed             |
-| Custom logo & colors | ❌                 | ✅                       | ✅                  |
-| Templates            | 1                  | 5+                       | Unlimited           |
-| Invoice history      | ❌                 | ✅                       | ✅                  |
-| Recurring invoices   | ❌                 | ✅                       | ✅                  |
-| Team / Client portal | ❌                 | ❌                       | ✅                  |
-| API                  | ❌                 | ❌                       | ✅                  |
+### Why QuickBill can be profitable
 
-### Monetization path
-1. **Launch free** on GitHub Pages / Vercel / Netlify
-2. Collect emails of people who download PDFs (add a soft email gate later)
-3. Add Stripe Checkout for Pro
-4. Add user accounts + database (Supabase / Firebase) for history & recurring
-5. Sell Agency plan to freelancers who manage multiple clients
+| Feature                  | Free          | Pro ($9/mo)              | Agency ($29/mo)     |
+|--------------------------|---------------|--------------------------|---------------------|
+| Unlimited invoices       | ✅            | ✅                       | ✅                  |
+| PDF download             | ✅            | ✅                       | ✅                  |
+| Watermark                | Yes (subtle)  | Removed                  | Removed             |
+| Custom logo & colors     | ❌            | ✅                       | ✅                  |
+| Templates                | 1             | 5+                       | Unlimited           |
+| Invoice history          | ❌            | ✅                       | ✅                  |
+| Recurring invoices       | ❌            | ✅                       | ✅                  |
+| Team / Client portal     | ❌            | ❌                       | ✅                  |
+| API                      | ❌            | ❌                       | ✅                  |
 
-This exact model powers several $5k–$30k MRR indie products in the invoice/billing space.
+This freemium model powers multiple $5k–$30k+ MRR products in the invoice space.
 
-## Features (current)
+---
 
-- Live preview that updates as you type
+### Features
+
+- Clean branded UI with custom logo
+- Live preview that updates instantly
 - Add / remove line items
-- Tax calculation
-- Multiple currencies (USD, EUR, GBP, ZAR, CAD…)
-- Professional PDF download (html2canvas + jsPDF)
+- Tax calculation + multi-currency
+- Professional PDF export
 - Fully responsive
-- Clean Tailwind design
-- Zero backend required to start
+- Zero backend required to launch
 
-## Quick start
+---
 
-Just open `index.html` in a browser, or:
+### Quick Start
+
+Open `index.html` in any modern browser, or serve locally:
 
 ```bash
-# Serve locally
 npx serve .
 # or
 python3 -m http.server 3000
 ```
 
-## Deploy for free
+---
 
-### GitHub Pages
-1. Go to repo **Settings → Pages**
-2. Source: Deploy from branch `main` / root
-3. Your site will be live at `https://saturn-world.github.io/quickbill`
+### Deploy for free
 
-### Vercel / Netlify
-Drag & drop the folder or connect the GitHub repo — one-click deploy.
+**GitHub Pages**
+1. Repo → **Settings** → **Pages**
+2. Source: Deploy from branch `main` (root)
+3. Live at: `https://saturn-world.github.io/quickbill`
 
-## Next steps to make it profitable
-
-1. Add a soft email capture before PDF download
-2. Integrate Stripe (Checkout or Payment Links)
-3. Add localStorage / IndexedDB for “saved invoices”
-4. Create 4–5 extra professional templates
-5. Add logo upload + brand color picker (Pro feature)
-6. Build simple auth + cloud sync with Supabase
-
-## Tech
-
-- Vanilla JS (no build step)
-- Tailwind CSS (CDN)
-- jsPDF + html2canvas for PDF generation
-- Works offline once loaded
+**Vercel / Netlify**  
+Connect the repo or drag-and-drop the folder.
 
 ---
 
-Built for **Saturn-world** as a ready-to-monetize starter.  
-Feel free to fork, brand it, and ship.
+### Roadmap to revenue
+
+1. Soft email capture before PDF download
+2. Stripe Checkout for Pro
+3. Logo upload + brand color picker (Pro)
+4. Extra professional templates
+5. localStorage / Supabase for invoice history
+6. Agency plan with team seats
+
+---
+
+### Tech
+
+- Vanilla JS (no build step)
+- Tailwind CSS (CDN)
+- jsPDF + html2canvas
+- Works offline after first load
+
+---
+
+**QuickBill** – Built for freelancers and small teams.  
+Repo: [github.com/Saturn-world/quickbill](https://github.com/Saturn-world/quickbill)
